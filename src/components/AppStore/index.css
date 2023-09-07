@@ -1,0 +1,29 @@
+/* Write your CSS here */
+* {
+  font-family: 'Bree Serif';
+}
+.bg {
+  background-image: linear-gradient(#fff1eb, #ace0f9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+}
+.userInput {
+  width: 60%;
+  padding: 5px;
+  border-style: solid;
+  border-color: #dfe2e5;
+}
+input {
+  border: none;
+}
+.search-icon {
+  height: 50px;
+}
+.tabitems-container {
+  display: flex;
+}
+.apps-container {
+  display: flex;
+}
