@@ -8,18 +8,21 @@
   flex-direction: column;
   align-items: center;
   padding: 15px;
+  height: 100vh;
+  background-size: cover;
 }
 .userInput {
-  width: 60%;
-  padding: 5px;
-  border-style: solid;
-  border-color: #dfe2e5;
+  display: flex;
 }
 input {
   border: none;
+  width: 20vw;
+  border-style: solid;
+  border-color: #dfe2e5;
+  background-color: transparent;
 }
 .search-icon {
-  height: 50px;
+  height: 30px;
 }
 .tabitems-container {
   display: flex;

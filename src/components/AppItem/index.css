@@ -4,15 +4,25 @@
 }
 .app-container {
   background-color: #ffffff;
-  padding: 8px;
+  padding-top: 16px;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 10px;
   columns: 3;
+  height: 120px;
+  width: 45%;
+  max-width: 128px;
+  list-style-type: none;
+}
+p {
+  text-align: center;
 }
 .app-image {
   height: 50px;
   width: 50px;
+  margin-top: 15px;
 }

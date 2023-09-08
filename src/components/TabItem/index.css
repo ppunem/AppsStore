@@ -1,8 +1,12 @@
 /* Write your CSS here */
-.tabItem {
+.tabItems {
   color: #7b8794;
   font-size: 12px;
   background-color: transparent;
   border: none;
-  margin-right: 8px;
+  margin-right: 25px;
+}
+.active {
+  text-decoration: underline blue;
+  color: blue;
 }
