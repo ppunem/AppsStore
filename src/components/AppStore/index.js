@@ -294,7 +294,7 @@ const appsList = [
 
 // Write your code here
 class AppStore extends Component {
-  state = {activeTabid: tabsList[0].tabId,searchInput:''}
+  state = {activeTabid: tabsList[0].tabId, searchInput: ''}
 
   changeActiveTabId = tabId => {
     this.setState({activeTabid: tabId})
@@ -309,21 +309,21 @@ class AppStore extends Component {
     return filteredApps
   }
 
-  changeSearchInput=event=>{
-      this.setState({searchInput:event.target.value})
+  changeSearchInput = event => {
+    this.setState({searchInput: event.target.value})
   }
 
   searchedApps = () => {
     const {searchInput} = this.state
-    const apps = appsList.filter(each => 
-      each.appName.toLowerCase().includes(searchInput.toLowerCase()
-      )
-      return apps
-    }
+    const apps = appsList.filter(each =>
+      each.appName.toLowerCase().includes(searchInput.toLowerCase()),
+    )
+    return apps
+  }
 
   render() {
-    const {activeTabid,searchInput} = this.state
-    const searchedApps=this.searchedApps()
+    const {activeTabid, searchInput} = this.state
+    const searchedApps = this.searchedApps()
     const appsFiltered = this.filterCorrespondingApps(searchedApps)
 
     return (
@@ -333,6 +333,7 @@ class AppStore extends Component {
           <input
             type="search"
             placeholder="search"
+            value={searchInput}
             onChange={this.changeSearchInput}
           />
           <img
@@ -354,7 +355,7 @@ class AppStore extends Component {
 
         <ul className="apps-container">
           {appsFiltered.map(eachApp => (
-            <AppItem app={eachApp} key={eachApp.appId} />
+            <AppItem key={eachApp.appId} app={eachApp} />
           ))}
         </ul>
       </div>
